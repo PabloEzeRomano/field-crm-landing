@@ -1,19 +1,7 @@
-// next.config.mjs
-// const isDev = process.env.NODE_ENV !== 'production';
+import type { NextConfig } from "next";
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  basePath: '/field-crm',
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/field-crm',
-        permanent: false,
-        basePath: false,
-      },
-    ];
-  },
+const nextConfig: NextConfig = {
+  /* config options here */
 };
 
 export default nextConfig;
